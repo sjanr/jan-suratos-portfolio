@@ -1,9 +1,12 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
 function App() {
   return (
-    <main>
-      <h1>Jan Suratos Portfolio</h1>
-      <p>Welcome to my creative-technology space.</p>
-    </main>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
 
