@@ -1,0 +1,33 @@
+.portfolio {
+  background-color: var(--sage-dark-top);
+  padding: 100px 20px;
+  color: var(--text-light);
+}
+
+.portfolio-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-group {
+  margin-bottom: 100px;
+}
+
+.portfolio-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.portfolio-subtitle {
+  color: var(--text-subtle);
+  font-size: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
