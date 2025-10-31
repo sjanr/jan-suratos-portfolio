@@ -12,7 +12,7 @@ function Hero() {
       />
 
       <div className="hero-name">Jan Suratos</div>
-      <div className="hero-label">Creative Software Engineer & Game Developer</div>
+      <div className="hero-label">Interactive Systems Engineer</div>
 
       <div className="hero-buttons">
         <a
@@ -23,7 +23,7 @@ function Hero() {
         >
           <FaGithub className="hero-icon" /></a>
         <a
-          href="https://linkedin.com/in/sjanr"
+          href="https://linkedin.com/in/jansuratos"
           target="_blank"
           rel="noreferrer"
           className="hero-btn"
