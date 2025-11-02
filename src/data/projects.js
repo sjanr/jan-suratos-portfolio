@@ -1,28 +1,43 @@
-// src/data/projects.js
 export const projectGroups = [
   {
-    title: "System Intelligence & Design Engineering",
+    title: "Architecture & System Design",
     subtitle: "Where computation, architecture, and thoughtful design meet.",
     projects: [
       {
         title: "TA Allocation & Management System",
         description:
-          "Full-stack React/Django platform automating TA assignments using LLM logic and data architecture.",
+          "Full-stack platform automating TA matching through intelligent design.",
         image: "/images/taalloc-thumb.jpg",
-        tags: ["Full Stack", "AI", "React", "Django"],
+        tags: ["Full Stack", "React", "Django", "LLM"],
         link: "#",
       },
       {
         title: "Game of Amazons AI",
         description:
-          "Competitive board-game agent with a Voronoi-inspired heuristic for territory evaluation.",
+          "Strategic AI agent using a Voronoi-inspired territory heuristic.",
         image: "/images/amazons-thumb.jpg",
         tags: ["AI", "Heuristics", "Game Logic"],
         link: "#",
       },
-      // ...add others
+      {
+        title: "Nucleotide → Amino Acid Visualizer",
+        description:
+          "Transforms DNA sequences into amino acids through color mapping.",
+        image: "/images/bio-thumb.jpg",
+        tags: ["Data Visualization", "Biology", "Creative Coding"],
+        link: "#",
+      },
+      {
+        title: "Weather Forecast Web App",
+        description:
+          "Responsive weather dashboard with live API data integration.",
+        image: "/images/weather-thumb.jpg",
+        tags: ["Frontend", "API", "Team Project", "UX"],
+        link: "#",
+      },
     ],
   },
+
   {
     title: "Interactive Worlds & Gameplay Systems",
     subtitle:
@@ -31,14 +46,30 @@ export const projectGroups = [
       {
         title: "Wings of Legacy",
         description:
-          "Atmospheric hummingbird life-cycle prototype exploring adaptation and emotion through movement.",
+          "Atmospheric hummingbird prototype exploring resilience through flight.",
         image: "/images/wings-thumb.jpg",
-        tags: ["Unity", "Unreal", "Game Design"],
+        tags: ["Unity", "Unreal", "Narrative", "Game Design"],
         link: "#",
       },
-      // etc.
+      {
+        title: "Ice Climber: Twist",
+        description:
+          "Reimagined platformer with vertical traversal and dynamic physics.",
+        image: "/images/iceclimber-thumb.jpg",
+        tags: ["Unity", "Game Physics", "Animation"],
+        link: "#",
+      },
+      {
+        title: "Super Bug Zapper",
+        description:
+          "WebGL experiment zapping bacteria on a reactive 3D sphere.",
+        image: "/images/bugzapper-thumb.jpg",
+        tags: ["WebGL", "3D Interaction", "JavaScript"],
+        link: "#",
+      },
     ],
   },
+
   {
     title: "Creative Technology & Digital Expression",
     subtitle:
@@ -47,9 +78,17 @@ export const projectGroups = [
       {
         title: "Eudaimonia",
         description:
-          "AI journaling app for reflection and clarity built in React and Node.",
+          "AI journaling app for mindful reflection and creative clarity.",
         image: "/images/eudaimonia-thumb.jpg",
-        tags: ["React", "Node", "UX"],
+        tags: ["React", "Node", "UX", "AI"],
+        link: "#",
+      },
+      {
+        title: "Blender Modelling & Rigging Showcase",
+        description:
+          "Showcase of original 3D character rigs and animations.",
+        image: "/images/blender-thumb.jpg",
+        tags: ["Blender", "Rigging", "Animation"],
         link: "#",
       },
     ],

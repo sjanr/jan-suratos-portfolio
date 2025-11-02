@@ -6,24 +6,40 @@ function About() {
       <div className="about-container">
         <h2>About Me</h2>
         <p>
-          I’m Jan Suratos, an Interactive Systems Engineer
-          passionate about crafting expressive and intelligent experiences that blend design, 
-          art, and computation. My work explores how technology can feel alive—how systems 
-          can respond, adapt, and move with the same intentionality as living things.
+          I’m Jan Suratos. I build systems that feel
+          alive because, to me, technology only becomes meaningful when people
+          can feel it respond. Every interface, animation, and behavior I design
+          is guided by user empathy, that small but essential question:
+          <em>“Does this feel right to interact with?”</em>
         </p>
+
         <p>
-          I studied Computer Science at UBC Okanagan, where I specialized in 
-          Human–Computer Interaction and game-related AI. From designing multi-platform 
-          collaboration systems in VR and large displays, to creating emotionally resonant 
-          games like <em>Wings of Legacy</em>, I bridge research and creativity to build 
-          interfaces that inspire empathy and curiosity.
+          I originally started in biology before moving into computer science,
+          and that curiosity still shapes how I think. I love biomimicry, not
+          because it sounds cool in a portfolio, but because nature has already
+          solved problems we’re still learning to understand. Biological systems
+          are efficient, and deeply optimized. I don’t claim to grasp
+          it all, but I find beauty in studying how those principles can inform
+          software. In my AI project below, I used Voronoi patterns to give an AI a sense of space, 
+          a way to react to its environment the way living systems do.
         </p>
+
         <p>
-          Whether I’m engineering real-time interactions or choreographing animation and light, 
-          my goal is the same—to craft systems that invite people to feel present, curious, 
-          and connected.
+          I approach design from both emotion and logic. I like to look at the
+          world systematically, whether it’s a door handle that confuses you
+          into pulling when you should push, or an interface that makes you work
+          harder than you need to. My instinct is to fix it, refine it, make it
+          feel effortless. That’s the engineer in me. But the artist in me wants
+          it to feel crafted, honed, maybe even chasing a personal
+          <em> magnum opus</em>.
         </p>
-        
+
+        <p>
+          I’m creative, curious, and maybe a little too detail-oriented. But I
+          love what I do. Whether it’s coding, prototyping, or dancing between
+          logic and intuition (no, seriosly, I'm actually a dancer), my goal is the same, to build systems that don’t
+          just function beautifully, but feel beautifully.
+        </p>
       </div>
     </section>
   );
