@@ -15,7 +15,7 @@ export const projectGroups = [
         title: "Game of Amazons AI",
         description:
           "Strategic AI agent using a Voronoi-inspired territory heuristic.",
-        image: "/images/amazons-thumb.jpg",
+        image: "src/images/gameOfAmazons.gif",
         tags: ["AI", "Heuristics", "Game Logic"],
         link: "#",
       },
@@ -31,7 +31,7 @@ export const projectGroups = [
         title: "Weather Forecast Web App",
         description:
           "Responsive weather dashboard with live API data integration.",
-        image: "/images/weather-thumb.jpg",
+        image: "src/images/weatherApp.png",
         tags: ["Frontend", "API", "Team Project", "UX"],
         link: "#",
       },
@@ -47,7 +47,7 @@ export const projectGroups = [
         title: "Wings of Legacy",
         description:
           "Atmospheric hummingbird prototype exploring resilience through flight.",
-        image: "/images/wings-thumb.jpg",
+        image: "src/images/wingsOfLegacy.gif",
         tags: ["Unity", "Unreal", "Narrative", "Game Design"],
         link: "#",
       },
@@ -55,7 +55,7 @@ export const projectGroups = [
         title: "Ice Climber: Twist",
         description:
           "Reimagined platformer with vertical traversal and dynamic physics.",
-        image: "/images/iceclimber-thumb.jpg",
+        image: "src/images/iceClimberTwist.gif",
         tags: ["Unity", "Game Physics", "Animation"],
         link: "#",
       },
@@ -79,7 +79,7 @@ export const projectGroups = [
         title: "Eudaimonia",
         description:
           "AI journaling app for mindful reflection and creative clarity.",
-        image: "/images/eudaimonia-thumb.jpg",
+        image: "src/images/eudaimoniaMenu.gif",
         tags: ["React", "Node", "UX", "AI"],
         link: "#",
       },
@@ -87,7 +87,7 @@ export const projectGroups = [
         title: "Blender Modelling & Rigging Showcase",
         description:
           "Showcase of original 3D character rigs and animations.",
-        image: "/images/blender-thumb.jpg",
+        image: "src/images/hoverWings.mp4",
         tags: ["Blender", "Rigging", "Animation"],
         link: "#",
       },

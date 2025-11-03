@@ -9,7 +9,16 @@ function ProjectCard({ title, description, image, tags, link }) {
       className="project-card"
     >
       <div className="project-image-wrapper">
-        <img src={image} alt={title} className="project-image" />
+        <img
+          src={image}
+          alt={title}
+          className="project-image"
+          style={
+            title === "Game of Amazons AI"
+              ? { objectPosition: "center 35.5%" }
+              : {}
+          }
+        />
       </div>
 
       <div className="project-content">
