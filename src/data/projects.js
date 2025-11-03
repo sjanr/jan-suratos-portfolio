@@ -7,7 +7,7 @@ export const projectGroups = [
         title: "TA Allocation & Management System",
         description:
           "Full-stack platform automating TA matching through intelligent design.",
-        image: "/images/taalloc-thumb.jpg",
+        image: "../images/taalloc-thumb.jpg",
         tags: ["Full Stack", "React", "Django", "LLM"],
         link: "#",
       },
@@ -15,7 +15,7 @@ export const projectGroups = [
         title: "Game of Amazons AI",
         description:
           "Strategic AI agent using a Voronoi-inspired territory heuristic.",
-        image: "src/images/gameOfAmazons.gif",
+        image: "../images/gameOfAmazons.gif",
         tags: ["AI", "Heuristics", "Game Logic"],
         link: "#",
       },
@@ -23,7 +23,7 @@ export const projectGroups = [
         title: "Nucleotide → Amino Acid Visualizer",
         description:
           "Transforms DNA sequences into amino acids through color mapping.",
-        image: "/images/bio-thumb.jpg",
+        image: "../images/bio-thumb.jpg",
         tags: ["Data Visualization", "Biology", "Creative Coding"],
         link: "#",
       },
@@ -31,7 +31,7 @@ export const projectGroups = [
         title: "Weather Forecast Web App",
         description:
           "Responsive weather dashboard with live API data integration.",
-        image: "src/images/weatherApp.png",
+        image: "../images/weatherApp.png",
         tags: ["Frontend", "API", "Team Project", "UX"],
         link: "#",
       },
@@ -47,7 +47,7 @@ export const projectGroups = [
         title: "Wings of Legacy",
         description:
           "Atmospheric hummingbird prototype exploring resilience through flight.",
-        image: "src/images/wingsOfLegacy.gif",
+        image: "../images/wingsOfLegacy.gif",
         tags: ["Unity", "Unreal", "Narrative", "Game Design"],
         link: "#",
       },
@@ -55,7 +55,7 @@ export const projectGroups = [
         title: "Ice Climber: Twist",
         description:
           "Reimagined platformer with vertical traversal and dynamic physics.",
-        image: "src/images/iceClimberTwist.gif",
+        image: "../images/iceClimberTwist.gif",
         tags: ["Unity", "Game Physics", "Animation"],
         link: "#",
       },
@@ -63,7 +63,7 @@ export const projectGroups = [
         title: "Super Bug Zapper",
         description:
           "WebGL experiment zapping bacteria on a reactive 3D sphere.",
-        image: "/images/bugzapper-thumb.jpg",
+        image: "../images/bugzapper-thumb.jpg",
         tags: ["WebGL", "3D Interaction", "JavaScript"],
         link: "#",
       },
@@ -79,7 +79,7 @@ export const projectGroups = [
         title: "Eudaimonia",
         description:
           "AI journaling app for mindful reflection and creative clarity.",
-        image: "src/images/eudaimoniaMenu.gif",
+        image: "../images/eudaimoniaMenu.gif",
         tags: ["React", "Node", "UX", "AI"],
         link: "#",
       },
@@ -87,7 +87,7 @@ export const projectGroups = [
         title: "Blender Modelling & Rigging Showcase",
         description:
           "Showcase of original 3D character rigs and animations.",
-        image: "src/images/hoverWings.mp4",
+        image: "../images/hoverWings.mp4",
         tags: ["Blender", "Rigging", "Animation"],
         link: "#",
       },
