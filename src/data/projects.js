@@ -15,7 +15,7 @@ export const projectGroups = [
         title: "Game of Amazons AI",
         description:
           "Strategic AI agent using a Voronoi-inspired territory heuristic.",
-        image: "/images/gameOfAmazons.gif",
+        image: "/images/gameOfAmazons_v2.gif",
         tags: ["AI", "Heuristics", "Game Logic"],
         link: "#",
       },
@@ -47,7 +47,7 @@ export const projectGroups = [
         title: "Wings of Legacy",
         description:
           "Atmospheric hummingbird prototype exploring resilience through flight.",
-        image: "/images/wingsOfLegacy.gif",
+        image: "/images/wingsOfLegacy_v2.gif",
         tags: ["Unity", "Unreal", "Narrative", "Game Design"],
         link: "#",
       },
@@ -55,7 +55,7 @@ export const projectGroups = [
         title: "Ice Climber: Twist",
         description:
           "Reimagined platformer with vertical traversal and dynamic physics.",
-        image: "/images/iceClimberTwist.gif",
+        image: "/images/iceClimberTwist_v2.gif",
         tags: ["Unity", "Game Physics", "Animation"],
         link: "#",
       },
