@@ -18,6 +18,8 @@ function ProjectCard({ title, description, image, tags, link }) {
               ? { objectPosition: "center 35.5%" }
               : title === "TA Allocation & Management System"
               ? { objectPosition: "center -0%" }
+              : title === "WebGL: Spherical Hit-Testing"
+              ? { objectPosition: "center 65%" }
               : {}
           }
         />

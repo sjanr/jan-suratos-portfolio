@@ -60,10 +60,10 @@ export const projectGroups = [
         link: "#",
       },
       {
-        title: "Super Bug Zapper",
+        title: "WebGL: Spherical Hit-Testing",
         description:
           "WebGL experiment zapping bacteria on a reactive 3D sphere.",
-        image: "/images/bugzapper-thumb.jpg",
+        image: "/images/WEBGL.gif",
         tags: ["WebGL", "3D Interaction", "JavaScript"],
         link: "#",
       },
