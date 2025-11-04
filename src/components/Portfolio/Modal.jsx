@@ -16,7 +16,7 @@ function Modal({ children, onClose }) {
         {children}
       </div>
     </div>,
-    document.body // 👈 attaches to the root of the document, not inside section
+    document.body
   );
 }
 

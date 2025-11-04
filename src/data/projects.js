@@ -4,22 +4,25 @@ export const projectGroups = [
     subtitle: "Where computation, architecture, and thoughtful design meet.",
     projects: [
       {
+        id: "ta-allocation-system",
         title: "TA Allocation & Management System",
         description:
-          "Full-stack platform automating TA matching through intelligent design.",
+          "Full-stack platform automating TA, Course, and Professor matching.",
         image: "/images/TALLOC.gif",
         tags: ["Full Stack", "React", "Django", "LLM"],
         link: "#",
       },
       {
+        id: "game-of-amazons-ai",
         title: "Game of Amazons AI",
         description:
-          "Strategic AI agent using a Voronoi-inspired territory heuristic.",
+          "Strategic AI agent using a bio-inspired Voronoi territory heuristic.",
         image: "/images/gameOfAmazons_v2.gif",
         tags: ["AI", "Heuristics", "Game Logic"],
         link: "#",
       },
       {
+        id: "nucleotide-visualizer",
         title: "Nucleotide → Amino Acid Visualizer",
         description:
           "Transforms DNA sequences into amino acids through color mapping.",
@@ -28,6 +31,7 @@ export const projectGroups = [
         link: "#",
       },
       {
+        id: "weather-forecast-app",
         title: "Weather Forecast Web App",
         description:
           "Responsive weather dashboard with live API data integration.",
@@ -44,25 +48,26 @@ export const projectGroups = [
       "Games and prototypes exploring motion, responsiveness, and narrative through interaction.",
     projects: [
       {
+        id: "wings-of-legacy",
         title: "Wings of Legacy",
         description:
-          "Atmospheric hummingbird prototype exploring resilience through flight.",
+          "Atmospheric hummingbird prototype exploring game flight mechanics.",
         image: "/images/wingsOfLegacy_v2.gif",
-        tags: ["Unity", "Unreal", "Narrative", "Game Design"],
+        tags: ["Unity", "Narrative", "Game Design"],
         link: "#",
       },
       {
+        id: "ice-climber-twist",
         title: "Ice Climber: Twist",
-        description:
-          "Reimagined platformer with vertical traversal and dynamic physics.",
+        description: "Reimagined platformer of Ice Climbers.",
         image: "/images/iceClimberTwist_v2.gif",
         tags: ["Unity", "Game Physics", "Animation"],
         link: "#",
       },
       {
+        id: "webgl-hit-testing",
         title: "WebGL: Spherical Hit-Testing",
-        description:
-          "WebGL experiment zapping bacteria on a reactive 3D sphere.",
+        description: "WebGL experiment with interactive targets on a 3D sphere.",
         image: "/images/WEBGL.gif",
         tags: ["WebGL", "3D Interaction", "JavaScript"],
         link: "#",
@@ -76,6 +81,7 @@ export const projectGroups = [
       "Projects merging human emotion, reflection, and digital craft.",
     projects: [
       {
+        id: "eudaimonia",
         title: "Eudaimonia",
         description:
           "AI journaling app for mindful reflection and creative clarity.",
@@ -84,6 +90,7 @@ export const projectGroups = [
         link: "#",
       },
       {
+        id: "blender-showcase",
         title: "Blender Modelling & Rigging Showcase",
         description:
           "Showcase of original 3D character rigs and animations.",
