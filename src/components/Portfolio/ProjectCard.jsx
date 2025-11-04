@@ -16,6 +16,8 @@ function ProjectCard({ title, description, image, tags, link }) {
           style={
             title === "Game of Amazons AI"
               ? { objectPosition: "center 35.5%" }
+              : title === "TA Allocation & Management System"
+              ? { objectPosition: "center -0%" }
               : {}
           }
         />

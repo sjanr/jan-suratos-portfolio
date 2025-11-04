@@ -5,11 +5,14 @@ import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 function Hero() {
   return (
     <section className="hero">
-      <img
-        src="https://placehold.co/150x150?text=JS"
-        alt="Jan Suratos"
-        className="hero-img"
-      />
+      <div className="hero-img-wrap">
+        <img
+          src="/images/JanSuratos.png"
+          alt="Jan Suratos"
+          className="hero-img"
+        />
+      </div>
+
 
       <div className="hero-name">Jan Suratos</div>
       <div className="hero-label">Interactive Systems Engineer</div>

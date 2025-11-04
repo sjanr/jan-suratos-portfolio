@@ -1,6 +1,24 @@
+import { useEffect } from "react";
 import "./About.css";
 
 function About() {
+  useEffect(() => {
+    const gif = document.querySelector(".dancer-gif");
+    const dancerText = document.querySelector(".dancer-text");
+
+    if (!gif || !dancerText) return;
+
+    const moveGif = (e) => {
+      gif.style.left = `${e.clientX + 30}px`;
+      gif.style.top = `${e.clientY - 50}px`;
+    };
+
+    dancerText.addEventListener("mousemove", moveGif);
+
+    return () => {
+      dancerText.removeEventListener("mousemove", moveGif);
+    };
+  }, []);
   return (
     <section id="about">
       <div className="about-container">
@@ -10,7 +28,7 @@ function About() {
           alive because, to me, technology only becomes meaningful when people
           can feel it respond. Every interface, animation, and behavior I design
           is guided by user empathy, that small but essential question:
-          <em>“Does this feel right to interact with?”</em>
+          <em> “Does this feel right to interact with?”</em>
         </p>
 
         <p>
@@ -35,10 +53,18 @@ function About() {
         </p>
 
         <p>
-          I’m creative, curious, and maybe a little too detail-oriented. But I
-          love what I do. Whether it’s coding, prototyping, or dancing between
-          logic and intuition (no, seriosly, I'm actually a dancer), my goal is the same, to build systems that don’t
-          just function beautifully, but feel beautifully.
+          I’m creative, curious, and maybe a little too detail-oriented. But I love what
+          I do. Whether it’s coding, prototyping, or dancing between logic and intuition
+          (<span className="dancer-text">
+            no, seriously, I’m actually a dancer
+            <img
+              src="/images/dancer.gif"
+              alt="Jan dancing"
+              className="dancer-gif"
+            />
+          </span>
+          ), my goal is the same, to build systems that don’t just function beautifully,
+          but feel beautifully.
         </p>
       </div>
     </section>

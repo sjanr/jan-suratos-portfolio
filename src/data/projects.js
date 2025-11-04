@@ -7,7 +7,7 @@ export const projectGroups = [
         title: "TA Allocation & Management System",
         description:
           "Full-stack platform automating TA matching through intelligent design.",
-        image: "/images/talloc.png",
+        image: "/images/TALLOC.gif",
         tags: ["Full Stack", "React", "Django", "LLM"],
         link: "#",
       },
@@ -31,7 +31,7 @@ export const projectGroups = [
         title: "Weather Forecast Web App",
         description:
           "Responsive weather dashboard with live API data integration.",
-        image: "/images/weatherApp.png",
+        image: "/images/WEATHER_v4.gif",
         tags: ["Frontend", "API", "Team Project", "UX"],
         link: "#",
       },

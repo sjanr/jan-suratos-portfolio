@@ -24,3 +24,26 @@
   font-size: 1.2rem;
   margin-bottom: 18px;
 }
+
+.dancer-text {
+  position: relative;
+  cursor: pointer;
+  color: var(--sage-accent);
+  font-weight: 600;
+}
+
+.dancer-gif {
+  position: fixed;
+  width: 60px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 9999;
+}
+
+.dancer-text:hover .dancer-gif {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
