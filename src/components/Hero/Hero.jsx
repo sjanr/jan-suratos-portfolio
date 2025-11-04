@@ -7,7 +7,7 @@ function Hero() {
     <section className="hero">
       <div className="hero-img-wrap">
         <img
-          src="/images/JanSuratos.png"
+          src="/images/JanSuratosHero_v2.png"
           alt="Jan Suratos"
           className="hero-img"
         />
