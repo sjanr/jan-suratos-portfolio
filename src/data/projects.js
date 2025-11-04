@@ -23,10 +23,10 @@ export const projectGroups = [
       },
       {
         id: "nucleotide-visualizer",
-        title: "Nucleotide → Amino Acid Visualizer",
+        title: "DNA → Amino Acid Translator",
         description:
-          "Transforms DNA sequences into amino acids through color mapping.",
-        image: "/images/bio-thumb.jpg",
+          "Transforms DNA sequences into amino acids.",
+        image: "/images/AMINO.gif",
         tags: ["Data Visualization", "Biology", "Creative Coding"],
         link: "#",
       },

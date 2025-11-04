@@ -4,10 +4,12 @@
 }
 
 .about-container {
-  max-width: min(70vw, 950px);
+  width: 100%;
+  max-width: 950px;
   margin: 0 auto;
   text-align: left;
   color: #333;
+  padding: 0 1.25rem;
 }
 
 .about-container h2 {
