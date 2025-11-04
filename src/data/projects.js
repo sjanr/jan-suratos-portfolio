@@ -7,7 +7,7 @@ export const projectGroups = [
         title: "TA Allocation & Management System",
         description:
           "Full-stack platform automating TA matching through intelligent design.",
-        image: "/images/taalloc-thumb.jpg",
+        image: "/images/talloc.png",
         tags: ["Full Stack", "React", "Django", "LLM"],
         link: "#",
       },
