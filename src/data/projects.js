@@ -87,7 +87,7 @@ export const projectGroups = [
         title: "Blender Modelling & Rigging Showcase",
         description:
           "Showcase of original 3D character rigs and animations.",
-        image: "/images/hoverWings.mp4",
+        image: "/images/compressed_HoverWings.mp4",
         tags: ["Blender", "Rigging", "Animation"],
         link: "#",
       },
