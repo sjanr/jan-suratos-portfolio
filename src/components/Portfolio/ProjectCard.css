@@ -73,7 +73,7 @@
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(182, 210, 189, 0.85); /* soft sage tint */
+  background: rgba(182, 210, 189, 0.85);
   backdrop-filter: blur(6px);
   display: flex;
   justify-content: center;
@@ -86,7 +86,6 @@
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
-  padding: clamp(20px, 4vw, 48px);
   width: 90vw;
   height: 90vh;
   overflow-y: auto;
@@ -94,67 +93,47 @@
   animation: scaleIn 0.25s ease;
   scrollbar-width: thin;
   scrollbar-color: #c7d8cc transparent;
+  padding: clamp(20px, 4vw, 48px);
+  padding-top: 0; /* header provides its own padding */
 }
 
 .project-modal::-webkit-scrollbar {
   width: 8px;
 }
+
 .project-modal::-webkit-scrollbar-thumb {
   background-color: #c7d8cc;
   border-radius: 10px;
 }
+
 .project-modal::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* --- Modal Typography & Layout --- */
-.modal-title {
+/* --- Sticky Header --- */
+.project-modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffff;
+  padding: 1rem 0 0.8rem 0;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid #e4eee7;
+}
+
+.project-modal-header .modal-title {
   font-size: 1.6rem;
   font-weight: 700;
   color: #2d3a32;
-  margin-bottom: 1.25rem;
   letter-spacing: 0.3px;
   text-align: left;
+  margin: 0;
 }
 
-.modal-content {
-  color: #3c4a40;
-  font-size: 1rem;
-  line-height: 1.75;
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
-  animation: fadeSlideIn 0.4s ease forwards;
-}
-
-/* Paragraph and emphasis styles */
-.modal-content p {
-  margin-bottom: 1.25rem;
-}
-.modal-content strong {
-  color: #1e3128;
-  font-weight: 600;
-}
-.modal-content em {
-  color: #4e6356;
-  font-style: italic;
-}
-
-/* Centered media */
-.modal-content img,
-.modal-content video {
-  display: block;
-  margin: 1.5rem auto;
-  border-radius: 12px;
-  max-width: 100%;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-/* --- Close Button --- */
-.modal-close {
+.project-modal-header .modal-close {
   position: absolute;
-  top: 14px;
-  right: 18px;
+  top: 20px;
+  right: 24px;
   font-size: 1.6rem;
   font-weight: 600;
   background: none;
@@ -164,38 +143,94 @@
   transition: color 0.2s ease;
 }
 
-.modal-close:hover {
+.project-modal-header .modal-close:hover {
   color: #1a1a1a;
+}
+
+/* --- Modal Content --- */
+.modal-content {
+  color: #3c4a40;
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: min(90vw, 900px);
+  margin: 0 auto;
+  text-align: left;
+  animation: fadeSlideIn 0.4s ease forwards;
+}
+
+.modal-content p {
+  margin-bottom: 1.25rem;
+}
+
+.modal-content strong {
+  color: #1e3128;
+  font-weight: 600;
+}
+
+.modal-content em {
+  color: #4e6356;
+  font-style: italic;
+}
+
+/* --- Modal Sections --- */
+.modal-section {
+  margin-bottom: 2rem;
+  animation: fadeSlideIn 0.4s ease forwards;
+}
+
+.modal-section + .modal-section {
+  border-top: 1px solid #e0ebe3;
+  padding-top: 1.5rem;
+}
+
+.modal-section h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--sage-nav);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.2px;
+}
+
+.modal-section p {
+  margin-bottom: 0.75rem;
+  color: #3c4a40;
+  line-height: 1.7;
+}
+
+.modal-section img {
+  display: block;
+  margin: 1.25rem auto;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.modal-section:first-of-type {
+  margin-top: 0.5rem;
+}
+
+/* --- Centered Media (Global) --- */
+.modal-content img,
+.modal-content video {
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  max-width: 100%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Animations --- */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes scaleIn {
-  from {
-    transform: scale(0.96);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+  from { transform: scale(0.96); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 @keyframes fadeSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }

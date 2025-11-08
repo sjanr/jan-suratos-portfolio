@@ -40,17 +40,36 @@ function ProjectCard({ id, title, description, image, tags }) {
       {/* MODAL */}
       {isOpen && (
         <Modal onClose={() => setIsOpen(false)}>
-          <button className="modal-close" onClick={() => setIsOpen(false)}>×</button>
-          <h2 className="modal-title">{detail?.title || title}</h2>
-          <div
-            className="modal-content"
-            dangerouslySetInnerHTML={{
-              __html:
-                detail?.content ||
-                "<p>Details coming soon!</p>",
-            }}
-          />
+          <div className="project-modal-header">
+            <button className="modal-close" onClick={() => setIsOpen(false)}>
+              ×
+            </button>
+            <h2 className="modal-title">{detail?.title || title}</h2>
+          </div>
+
+          {detail?.sections ? (
+            <div className="modal-content">
+              {detail.sections.map((section, index) => (
+                <div className="modal-section" key={index}>
+                  {section.heading && <h3>{section.heading}</h3>}
+                  {section.body && <p>{section.body}</p>}
+                  {section.images &&
+                    section.images.map((img, i) => (
+                      <img
+                        key={i}
+                        src={img}
+                        alt={section.heading || title}
+                        className="modal-image"
+                      />
+                    ))}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p>Details coming soon!</p>
+          )}
         </Modal>
+
       )}
     </>
   );
