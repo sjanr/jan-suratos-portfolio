@@ -14,7 +14,7 @@ export const projectDetails = {
       {
         heading: "My Role",
         body: `
-        As Frontend Lead, I was responsible for prototyping in Figma and translating those designs into an interactive, user-oriented system built with React. My main goal was to accommodate busy academic users by understanding how they interacted with the platform in their daily routines, ensuring each flow minimized friction and supported intuitive task completion. I contributed across the entire frontend, developing core workflows such as the Student Application Form, Coordinator Dashboard, and TA Request process, while maintaining consistency in layout, responsiveness, and accessibility. Each iteration was guided by peer usability testing, client feedback, and team collaboration, which helped refine the system for clarity and real-world efficiency.
+        As Frontend Lead, I was responsible for prototyping in Figma and translating those designs into an interactive, user-oriented system built with React. My main goal was to accommodate busy academic users by understanding how they interacted with the platform in their daily routines, ensuring each flow supported intuitive task completion. I contributed across the entire frontend, developing core workflows such as the Student Application Form, Coordinator Dashboard, and TA Request process, while maintaining consistency in layout, responsiveness, and accessibility. Each iteration was guided by peer usability testing, client feedback, and team collaboration, which helped refine the system for clarity and real-world efficiency.
         `,
         images: ["/images/portfolio-talloc-2-v3.png"],
         className: "modal-image--role"
