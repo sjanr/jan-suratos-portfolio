@@ -1,3 +1,4 @@
+/* --- Project Card --- */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -86,14 +87,14 @@
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
-  width: 90vw;
-  height: 90vh;
+  width: clamp(700px, 80vw, 1000px);
+  max-height: 90vh;
   overflow-y: auto;
   position: relative;
   animation: scaleIn 0.25s ease;
   scrollbar-width: thin;
   scrollbar-color: #c7d8cc transparent;
-  padding: clamp(20px, 4vw, 48px);
+  padding: clamp(20px, 3vw, 40px);
   padding-top: 0; /* header provides its own padding */
 }
 
@@ -195,28 +196,6 @@
   margin-bottom: 0.75rem;
   color: #3c4a40;
   line-height: 1.7;
-}
-
-.modal-section img {
-  display: block;
-  margin: 1.25rem auto;
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.modal-section:first-of-type {
-  margin-top: 0.5rem;
-}
-
-/* --- Centered Media (Global) --- */
-.modal-content img,
-.modal-content video {
-  display: block;
-  margin: 1.5rem auto;
-  border-radius: 12px;
-  max-width: 100%;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Animations --- */

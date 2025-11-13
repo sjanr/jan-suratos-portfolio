@@ -2,6 +2,7 @@ import { useState } from "react";
 import { projectDetails } from "../../data/projectDetails";
 import Modal from "./Modal";
 import "./ProjectCard.css";
+import "./ModalImages.css";
 
 function ProjectCard({ id, title, description, image, tags }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,16 +53,18 @@ function ProjectCard({ id, title, description, image, tags }) {
               {detail.sections.map((section, index) => (
                 <div className="modal-section" key={index}>
                   {section.heading && <h3>{section.heading}</h3>}
-                  {section.body && <p>{section.body}</p>}
+                  {section.body && (
+                    <p dangerouslySetInnerHTML={{ __html: section.body }} />
+                  )}
                   {section.images &&
-                    section.images.map((img, i) => (
-                      <img
-                        key={i}
-                        src={img}
-                        alt={section.heading || title}
-                        className="modal-image"
-                      />
-                    ))}
+                  section.images.map((img, i) => (
+                    <img
+                      key={i}
+                      src={typeof img === "string" ? img : img.src}
+                      alt={section.heading || title}
+                      className={`modal-image ${section.className || ""}`}
+                    />
+                  ))}
                 </div>
               ))}
             </div>
