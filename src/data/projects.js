@@ -21,14 +21,14 @@ export const projectGroups = [
         tags: ["Unity", "Game Physics", "Animation"],
         link: "#",
       },
-      {
-        id: "webgl-hit-testing",
-        title: "WebGL: Spherical Hit-Testing",
-        description: "WebGL experiment with interactive targets on a 3D sphere.",
-        image: "/images/WEBGL.gif",
-        tags: ["WebGL", "3D Interaction", "JavaScript"],
-        link: "#",
-      },
+      // {
+      //   id: "webgl-hit-testing",
+      //   title: "WebGL: Spherical Hit-Testing",
+      //   description: "WebGL experiment with interactive targets on a 3D sphere.",
+      //   image: "/images/WEBGL.gif",
+      //   tags: ["WebGL", "3D Interaction", "JavaScript"],
+      //   link: "#",
+      // },
     ],
   },
 
@@ -63,15 +63,15 @@ export const projectGroups = [
         tags: ["Data Visualization", "Biology", "Creative Coding"],
         link: "#",
       },
-      {
-        id: "weather-forecast-app",
-        title: "Weather Forecast Web App",
-        description:
-          "Responsive weather dashboard with live API data integration.",
-        image: "/images/WEATHER_v4.gif",
-        tags: ["Frontend", "API", "Team Project", "UX"],
-        link: "#",
-      },
+      // {
+      //   id: "weather-forecast-app",
+      //   title: "Weather Forecast Web App",
+      //   description:
+      //     "Responsive weather dashboard with live API data integration.",
+      //   image: "/images/WEATHER_v4.gif",
+      //   tags: ["Frontend", "API", "Team Project", "UX"],
+      //   link: "#",
+      // },
     ],
   },
 

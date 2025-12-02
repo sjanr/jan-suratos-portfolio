@@ -134,6 +134,17 @@ export const projectDetails = {
         A major part of the work was optimizing the core flight loop so movement felt fluid with no stutter or input lag, which dramatically improved player comfort. 
         Wings of Legacy represents my growth as a self directed developer who cares deeply about polish and making interactive systems feel alive.
         `
+      },
+      {
+        heading: "Tech Stack",
+        body: `
+        Modeling, Rigging, Animation: Blender<br>
+        Engine: Unity<br>
+        Scripting: Unity (C#)<br>
+        Camera System: Cinemachine<br>
+        Version Control: GitHub<br><br>
+        `,
+        className: "modal-image--architecture"
       }
 
     ]
@@ -146,7 +157,58 @@ export const projectDetails = {
     sections: [
       {
         heading: "Overview",
-        body: "A reinterpretation of the NES classic with modern jump physics and animation responsiveness. Developed in Unity with C#.",
+        body: `
+        Retro Climb is a reinterpretation of the classic Ice Climber, rebuilt in Unity. The project explores how small mechanical 
+        changes: slopes, wind, and moving platforms can transform the climb of the original.
+        `,
+        images: ["/images/portfolio-retro-1.png"],
+        className: "modal-image--overview"
+      },
+      {
+        heading: "My Role",
+        body: `
+        I designed the sloped mountain layout, and implemented new 
+        environmental interactions which will be explained in the second after. 
+        I also created the camera follow system and animated the player’s run, jump, and fall states, 
+        editing pixel sprites for the mountain aesthetic.
+        `,
+        images: ["/images/portfolio-retro-2.png"],
+        className: "modal-image--role"
+      },
+      {
+        heading: "Gameplay & Systems",
+        body: `
+        The level is structured around controlled difficulty escalation: gentle slopes, 
+        wind zones force timing-based jumps, and unstable platforms. 
+        I tuned player physics, slope behavior, and hazard pacing to create a more dynamic and responsive climb 
+        while retaining the charm of the original arcade concept.
+        `,
+        images: [
+          "/images/portfolio-retro-3.png",
+        ],
+        className: "modal-image--mechanics"
+      },
+      {
+        heading: "Reflection",
+        body: `
+          This project strengthened my ability to combine level design, environmental logic, and animation. Working within the constraints of a retro aesthetic pushed me to be 
+          deliberate with small details. 
+          Collaborating with a group of creative individuals also introduced moments of clashing ideas, 
+          but navigating those differences taught me effective ways to communicate, defend design 
+          choices with clarity, and find solutions that served the project as a whole. This project represents 
+          how I elevate existing mechanics into more atmospheric experiences while growing as a 
+          collaborative developer.
+        `
+      },
+      {
+        heading: "Tech Stack",
+        body: `
+        Engine: Unity<br>
+        Programming: C#<br>
+        Version Control: GitHub<br>
+        Animation: Unity Animator<br>
+        `,
+        className: "modal-image--architecture"
       },
     ],
   },
