@@ -97,10 +97,49 @@ export const projectDetails = {
     sections: [
       {
         heading: "Overview",
-        body: "Atmospheric hummingbird flight prototype exploring natural motion, camera design, and responsive animation blending in Unity.",
+        body: `
+        Wings of Legacy is a personal Unity project where I set out to build a responsive, third-person hummingbird flight game. 
+        It began as a small experiment in movement and camera feel, but grew into a full exploration of character controllers, animation systems, 
+        level flow, and intentional game feel-driven entirely by my curiosity and iterative practice.
+        `,
+        images: ["/images/portfolio-wol-1.png"],
+        className: "modal-image--overview"
       },
-    ],
+      {
+        heading: "My Role",
+        body: `
+        As the sole developer, I handled design, programming, animation, and world setting. 
+        I built the flight mechanics, camera behavior, and animation state machine, while also shaping the narrative and tone. 
+        This project became my space to practice Unity fundamentals and push myself beyond coursework.
+        `,
+        images: ["/images/portfolio-wol-2.png"],
+        className: "modal-image--role"
+      },
+      {
+        heading: "Flight Mechanics",
+        body: `
+        I built a custom controller that mimics how hummingbirds actually move, quick directional changes, controlled hovering, and short bursts of acceleration. 
+        I tuned lift, drag, and turn responsiveness to capture a sense of real bird agility. 
+        The camera gently follows the bird’s momentum, and its rotation influences steering, creating a horizontal “look where you fly” experience. 
+        Most of the work came from iterative adjustments to forces, acceleration curves, and camera damping to make the motion feel believable.
+        `,
+        images: ["/images/portfolio-wol-3.png"],
+        className: "modal-image--mechanics"
+      },
+      {
+        heading: "Reflection",
+        body: `
+        This project showed me how much of game feel depends on careful iteration, observation, and performance tuning. 
+        Handling everything myself taught me how to solve problems creatively while keeping the experience smooth and responsive. 
+        A major part of the work was optimizing the core flight loop so movement felt fluid with no stutter or input lag, which dramatically improved player comfort. 
+        Wings of Legacy represents my growth as a self directed developer who cares deeply about polish and making interactive systems feel alive.
+        `
+      }
+
+    ]
   },
+
+
 
   "ice-climber-twist": {
     title: "Ice Climber: Twist",

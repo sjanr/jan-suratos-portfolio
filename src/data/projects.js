@@ -1,5 +1,38 @@
 export const projectGroups = [
   {
+    title: "Interactive Worlds & Gameplay Systems",
+    subtitle:
+      "Games and prototypes exploring motion, responsiveness, and narrative through interaction.",
+    projects: [
+      {
+        id: "wings-of-legacy",
+        title: "Wings of Legacy",
+        description:
+          "Atmospheric hummingbird prototype exploring game flight mechanics.",
+        image: "/images/wingsOfLegacy_v2.gif",
+        tags: ["Unity", "Narrative", "Game Design"],
+        link: "#",
+      },
+      {
+        id: "ice-climber-twist",
+        title: "Ice Climber: Twist",
+        description: "Reimagined platformer of Ice Climbers.",
+        image: "/images/iceClimberTwist_v2.gif",
+        tags: ["Unity", "Game Physics", "Animation"],
+        link: "#",
+      },
+      {
+        id: "webgl-hit-testing",
+        title: "WebGL: Spherical Hit-Testing",
+        description: "WebGL experiment with interactive targets on a 3D sphere.",
+        image: "/images/WEBGL.gif",
+        tags: ["WebGL", "3D Interaction", "JavaScript"],
+        link: "#",
+      },
+    ],
+  },
+
+  {
     title: "Architecture & System Design",
     subtitle: "Where computation, architecture, and thoughtful design meet.",
     projects: [
@@ -37,39 +70,6 @@ export const projectGroups = [
           "Responsive weather dashboard with live API data integration.",
         image: "/images/WEATHER_v4.gif",
         tags: ["Frontend", "API", "Team Project", "UX"],
-        link: "#",
-      },
-    ],
-  },
-
-  {
-    title: "Interactive Worlds & Gameplay Systems",
-    subtitle:
-      "Games and prototypes exploring motion, responsiveness, and narrative through interaction.",
-    projects: [
-      {
-        id: "wings-of-legacy",
-        title: "Wings of Legacy",
-        description:
-          "Atmospheric hummingbird prototype exploring game flight mechanics.",
-        image: "/images/wingsOfLegacy_v2.gif",
-        tags: ["Unity", "Narrative", "Game Design"],
-        link: "#",
-      },
-      {
-        id: "ice-climber-twist",
-        title: "Ice Climber: Twist",
-        description: "Reimagined platformer of Ice Climbers.",
-        image: "/images/iceClimberTwist_v2.gif",
-        tags: ["Unity", "Game Physics", "Animation"],
-        link: "#",
-      },
-      {
-        id: "webgl-hit-testing",
-        title: "WebGL: Spherical Hit-Testing",
-        description: "WebGL experiment with interactive targets on a 3D sphere.",
-        image: "/images/WEBGL.gif",
-        tags: ["WebGL", "3D Interaction", "JavaScript"],
         link: "#",
       },
     ],
