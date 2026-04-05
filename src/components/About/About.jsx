@@ -9,8 +9,8 @@ function About() {
     if (!gif || !dancerText) return;
 
     const moveGif = (e) => {
-      gif.style.left = `${e.clientX + 30}px`;
-      gif.style.top = `${e.clientY - 50}px`;
+      gif.style.left = `${e.clientX + 24}px`;
+      gif.style.top = `${e.clientY - 170}px`;
     };
 
     dancerText.addEventListener("mousemove", moveGif);
@@ -24,38 +24,35 @@ function About() {
       <div className="about-container">
         <h2>About Me</h2>
         <p>
-          I’m Jan Suratos. I build systems that feel
-          alive because, to me, technology only becomes meaningful when people
-          can feel it respond. Every interface, animation, and behavior I design
-          is guided by user empathy, that small but essential question:
-          <em> “Does this feel right to interact with?”</em>
+          Good tools get out of the way. Every second a user spends fighting
+          their software is a second they’re not doing what they actually came
+          to do. That’s the problem I want to spend my career solving.
         </p>
 
         <p>
-          I originally started in biology before moving into computer science,
-          and that curiosity still shapes how I think. I love biomimicry, not
-          because it sounds cool in a portfolio, but because nature has already
-          solved problems we’re still learning to understand. Biological systems
-          are efficient, and deeply optimized. I don’t claim to grasp
-          it all, but I find beauty in studying how those principles can inform
-          software. In my AI project below, I used Voronoi patterns to give an AI a sense of space, 
-          a way to react to its environment the way living systems do.
+          I came to computer science through biology, and that lens never left.
+          I’m drawn to biomimicry, not as aesthetic inspiration, but as
+          engineering logic. Organic systems are adaptive, efficient, and deeply
+          responsive to their environment. That’s what I want from software. In
+          my Game of Amazons AI (a chess-like strategy game), I used Voronoi patterns to give it a spatial
+          awareness, a way to read and react to its surroundings the way living
+          systems do.
         </p>
 
         <p>
-          I approach design from both emotion and logic. I like to look at the
-          world systematically, whether it’s a door handle that confuses you
-          into pulling when you should push, or an interface that makes you work
-          harder than you need to. My instinct is to fix it, refine it, make it
-          feel effortless. That’s the engineer in me. But the artist in me wants
-          it to feel crafted, honed, maybe even chasing a personal
-          <em> magnum opus</em>.
+          I think about the full system, not just the surface. A door handle
+          that makes you pull when you should push isn’t a bad handle; it’s a
+          failure of the whole interaction model. I bring that same lens to
+          every project: where does the friction live, what’s the invisible tax
+          on the user’s attention, and how do I remove it? Tools &amp; Layout
+          sits at exactly that intersection, where technical systems directly
+          shape what ends up on screen. That’s where I want to work.
         </p>
 
         <p>
           I’m creative, curious, and maybe a little too detail-oriented. But I love what
-          I do. Whether it’s coding, prototyping, or dancing between logic and intuition
-          (<span className="dancer-text">
+          I do. Whether it’s coding, prototyping, or dancing between logic and intuition (
+          <span className="dancer-text">
             no, seriously, I’m actually a dancer
             <img
               src="/images/dancer.gif"
@@ -63,7 +60,7 @@ function About() {
               className="dancer-gif"
             />
           </span>
-          ), my goal is the same, to build systems that don’t just function beautifully,
+          ), my goal is the same: to build systems that don’t just function beautifully,
           but feel beautifully.
         </p>
       </div>
