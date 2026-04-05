@@ -1,13 +1,14 @@
 #courses {
-  background-color: var(--sage-dark-bottom);
-  color: #FFFFFF;
-  padding: 3.5rem 0;
+  background-color: #0d1117;
+  color: rgba(240, 235, 224, 0.75);
+  padding: 3.5rem 1.2rem;
   padding-bottom: 2.5rem;
 }
 
 .courses-container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .courses-title {
@@ -16,40 +17,40 @@
   font-weight: 800;
   margin-bottom: 3rem;
   letter-spacing: 0.5px;
+  color: #f0ebe0;
 }
 
 .course-entry {
-  border-left: 3px solid var(--sage-accent);
+  border-left: 3px solid #c8a96e;
   padding-left: 24px;
   margin-bottom: 35px;
   transition: border-color 0.3s ease;
 }
 
 .course-entry:hover {
-  border-color: var(--text-subtle);
+  border-color: rgba(200, 169, 110, 0.5);
 }
 
 .course-name {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 0.3px;
+  color: #f0ebe0;
 }
 
 .course-grade {
   font-style: italic;
   font-size: 1rem;
   font-weight: 500;
-  color: #FFFFFF;
+  color: rgba(240, 235, 224, 0.45);
   margin-bottom: 12px;
-  opacity: 0.85;
 }
-
 
 .course-description {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--text-subtle);
+  color: rgba(240, 235, 224, 0.65);
   margin: 0;
 }
 

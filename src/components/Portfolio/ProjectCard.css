@@ -3,18 +3,20 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  background-color: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: #131920;
+  border-radius: 10px;
+  border: 1px solid rgba(200, 169, 110, 0.1);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   cursor: pointer;
   height: 100%;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-color: rgba(200, 169, 110, 0.35);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(200, 169, 110, 0.15);
 }
 
 .project-image-wrapper {
@@ -42,13 +44,13 @@
 .project-title {
   font-size: 1.05rem;
   font-weight: 600;
-  color: #333;
+  color: #f0ebe0;
   margin-bottom: -10px;
 }
 
 .project-description {
   font-size: 0.9rem;
-  color: #555;
+  color: rgba(240, 235, 224, 0.55);
   line-height: 1.45;
   margin-bottom: 10px;
 }
@@ -60,13 +62,14 @@
 }
 
 .project-tag {
-  background-color: var(--sage-accent);
-  color: var(--text-light);
+  background-color: rgba(200, 169, 110, 0.1);
+  color: #c8a96e;
+  border: 1px solid rgba(200, 169, 110, 0.25);
   padding: 3px 8px;
-  border-radius: 6px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.3px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
 
 /* --- Modal Overlay --- */
@@ -74,8 +77,9 @@
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(182, 210, 189, 0.85);
-  backdrop-filter: blur(6px);
+  background: rgba(11, 15, 20, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +97,7 @@
   position: relative;
   animation: scaleIn 0.25s ease;
   scrollbar-width: thin;
-  scrollbar-color: #c7d8cc transparent;
+  scrollbar-color: rgba(200, 169, 110, 0.3) transparent;
   padding: clamp(20px, 3vw, 40px);
   padding-top: 0; /* header provides its own padding */
 }
@@ -103,7 +107,7 @@
 }
 
 .project-modal::-webkit-scrollbar-thumb {
-  background-color: #c7d8cc;
+  background-color: rgba(200, 169, 110, 0.3);
   border-radius: 10px;
 }
 
@@ -187,7 +191,7 @@
 .modal-section h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--sage-nav);
+  color: #c8a96e;
   margin-bottom: 0.75rem;
   letter-spacing: 0.2px;
 }
