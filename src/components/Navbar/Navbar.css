@@ -1,15 +1,12 @@
-:root {
-  --sage-nav: #90b69c;
-  --text-light: #f7f7f7;
-}
-
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--sage-nav);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: rgba(11, 15, 20, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(200, 169, 110, 0.12);
   z-index: 100;
 }
 
@@ -26,7 +23,7 @@ nav {
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: -1px;
-  color: var(--text-light);
+  color: #f0ebe0;
 }
 
 .nav-links {
@@ -36,33 +33,31 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text-light);
-  font-weight: 700;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(240, 235, 224, 0.6);
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #ffffff;
+  color: #c8a96e;
 }
 
-/* --- Responsive adjustments --- */
+/* --- Responsive --- */
 @media (max-width: 800px) {
   .nav-container {
     padding: 0.8rem 1.5rem;
   }
 
   .nav-name {
-    font-size: 1.25rem; /* slightly smaller */
+    font-size: 1.25rem;
     letter-spacing: -0.5px;
   }
 
   .nav-links {
     gap: 1.5rem;
-  }
-
-  .nav-links a {
-    font-size: 0.95rem;
-    font-weight: 600;
   }
 }
 
@@ -78,9 +73,5 @@ nav {
 
   .nav-links {
     gap: 1rem;
-  }
-
-  .nav-links a {
-    font-size: 0.9rem;
   }
 }

@@ -8,14 +8,22 @@ body {
   width: 100%;
   overflow-x: hidden; /* prevents sideways scroll */
   overflow-y: auto;   /* allows normal vertical scroll */
-  background-color: #ffffff; /* base background for white sections */
+  background-color: #0b0f14;
 }
 
 :root {
   font-family: "Inter", system-ui, sans-serif;
   line-height: 1.6;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: #f0ebe0;
+  background-color: #0b0f14;
+
+  /* Sage palette — shared across About, Portfolio, Courses, ProjectCard */
+  --sage-nav: #90b69c;
+  --sage-dark-top: #B6D2BD;
+  --sage-dark-bottom: #8FB89E;
+  --sage-accent: #9FC8A9;
+  --text-light: #FFFFFF;
+  --text-subtle: #E6EFE8;
 }
 
 * {
