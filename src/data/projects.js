@@ -8,18 +8,16 @@ export const projectGroups = [
         id: "wings-of-legacy",
         title: "Wings of Legacy",
         description:
-          "Atmospheric hummingbird prototype exploring game flight mechanics.",
+          "Third-person hummingbird flight game with a custom controller, Cinemachine camera, and tuned lift and drag to capture real bird agility.",
         image: "/images/wingsOfLegacy_v2.gif",
         tags: ["Unity", "Narrative", "Game Design"],
-        link: "#",
       },
       {
         id: "ice-climber-twist",
         title: "Ice Climber: Twist",
-        description: "Reimagined platformer of Ice Climbers.",
+        description: "Classic Ice Climber rebuilt with slope physics, wind zones, and unstable platforms to create a more dynamic climb.",
         image: "/images/iceClimberTwist_v2.gif",
         tags: ["Unity", "Game Physics", "Animation"],
-        link: "#",
       },
       // {
       //   id: "webgl-hit-testing",
@@ -40,28 +38,25 @@ export const projectGroups = [
         id: "ta-allocation-system",
         title: "TA Allocation & Management System",
         description:
-          "Full-stack platform automating TA, Course, and Professor matching.",
+          "Full-stack platform replacing spreadsheets with a React + Django system for TA applications, instructor requests, and LLM-powered matching.",
         image: "/images/TALLOC.gif",
         tags: ["Full Stack", "React", "Django", "LLM"],
-        link: "#",
       },
       {
         id: "game-of-amazons-ai",
         title: "Game of Amazons AI",
         description:
-          "Strategic AI agent using a bio-inspired Voronoi territory heuristic.",
+          "3rd place out of 22 teams. AI agent with a bio-inspired Voronoi heuristic that treats the board as a living territory map.",
         image: "/images/gameOfAmazons_v2.gif",
         tags: ["AI", "Heuristics", "Game Logic"],
-        link: "#",
       },
       {
         id: "nucleotide-visualizer",
         title: "DNA → Amino Acid Translator",
         description:
-          "Transforms DNA sequences into amino acids.",
+          "Translates raw DNA sequences into color-coded amino acid blocks, making the codon translation process visual and interactive.",
         image: "/images/AMINO.gif",
         tags: ["Data Visualization", "Biology", "Creative Coding"],
-        link: "#",
       },
       // {
       //   id: "weather-forecast-app",
@@ -84,19 +79,17 @@ export const projectGroups = [
         id: "eudaimonia",
         title: "Eudaimonia",
         description:
-          "AI journaling app for mindful reflection and creative clarity.",
+          "Solo-built wellness app with AI-guided advice, a prompted journal, Pomodoro timer, and creativity board — all wired to a Node/Express backend.",
         image: "/images/eudaimoniaMenu.gif",
         tags: ["React", "Node", "UX", "AI"],
-        link: "#",
       },
       {
         id: "blender-showcase",
-        title: "Blender Modelling & Rigging Showcase",
+        title: "Hummingbird Animation",
         description:
-          "Showcase of original 3D character rigs and animations.",
+          "Modeled, rigged, and animated a hummingbird from scratch using slow-motion flight footage to replicate the figure-eight wingbeat pattern.",
         image: "/images/compressed_HoverWings.mp4",
         tags: ["Blender", "Rigging", "Animation"],
-        link: "#",
       },
     ],
   },
