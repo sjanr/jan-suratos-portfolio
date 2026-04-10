@@ -67,7 +67,28 @@ export const projectDetails = {
     sections: [
       {
         heading: "Overview",
-        body: "Strategic AI agent using a Voronoi-inspired heuristic to evaluate territory and simulate biologically-inspired spatial awareness and competition.",
+        body: `A competitive AI agent built for the Game of Amazons tournament at UBC Okanagan, placing <strong>3rd out of 22 teams</strong>. While my team implemented the search and optimization systems, I focused on the heuristic design: developing a Voronoi-based territory evaluation to make the AI think more spatially and organically.`,
+        images: ["/images/portfolio-amazons-certificate.png"],
+        className: "modal-image--overview",
+      },
+      {
+        heading: "My Role",
+        body: `The heuristic was my contribution to the team. I saw the board as an environment and the queens as organisms competing for territory, not just pieces optimizing moves. That biological lens pointed me toward Voronoi naturally. I didn't have deep experience with the underlying math, so I used AI tools to accelerate my understanding and sharpen the implementation. The conceptual direction, and the decision to pursue it, was something I arrived at on my own. The Voronoi evaluation assigns each empty cell on the board to whichever queen can reach it first, giving the AI a real-time map of territorial control that guides every decision.`,
+        images: ["/images/portfolio-amazons-screenshot.jpg"],
+        className: "modal-image--role",
+      },
+      {
+        heading: "Tech Stack",
+        body: `Language: Java<br>
+Algorithms: Minimax Search, Alpha–Beta Pruning, Iterative Deepening<br>
+Optimization: Zobrist Hashing, Transposition Table (Memoization)<br>
+Heuristic Design: Voronoi Territory Evaluation<br>
+Tools: SmartFox Server, Git, IntelliJ IDEA`,
+        className: "modal-image--architecture",
+      },
+      {
+        heading: "Reflection",
+        body: `This project reflects my drive to merge computational logic with creative reasoning. By introducing a bio-inspired heuristic, I reimagined board evaluation as a living system of influence and adaptation. What started as a standard AI assignment turned into an exploration of how geometry and biology can inform intelligent design.`,
       },
     ],
   },
@@ -77,7 +98,18 @@ export const projectDetails = {
     sections: [
       {
         heading: "Overview",
-        body: "A creative educational tool that visualizes how DNA codons translate into amino acids. Built with JavaScript, it transforms biological data into interactive color-coded representations.",
+        body: "A tool that translates raw DNA sequences into their corresponding amino acids, codon by codon. Each result is rendered as an interactive block showing both the codon and the amino acid it encodes, making the translation process tangible rather than abstract.",
+        images: ["/images/portfolio-amino-screenshot.png"],
+        className: "modal-image--overview",
+      },
+      {
+        heading: "Why I Built It",
+        body: "Biology has always been part of how I think about computation. This project sits at that intersection: it takes a process that happens invisibly inside every living cell and makes it something you can actually see and interact with. It also gave me a chance to practice vanilla JavaScript without leaning on a framework.",
+      },
+      {
+        heading: "Tech Stack",
+        body: "HTML, CSS, JavaScript (no frameworks)",
+        className: "modal-image--architecture",
       },
     ],
   },
@@ -158,8 +190,8 @@ export const projectDetails = {
       {
         heading: "Overview",
         body: `
-        Retro Climb is a reinterpretation of the classic Ice Climber, rebuilt in Unity. The project explores how small mechanical 
-        changes: slopes, wind, and moving platforms can transform the climb of the original.
+        Ice Climber: Twist is a reinterpretation of the classic Ice Climber, rebuilt in Unity. The project explores how small mechanical
+        changes: slopes, wind, and moving platforms can transform the feel of the original.
         `,
         images: ["/images/portfolio-retro-1.png"],
         className: "modal-image--overview"
@@ -228,17 +260,63 @@ export const projectDetails = {
     sections: [
       {
         heading: "Overview",
-        body: "An interactive journaling and reflection app blending mindfulness with AI-assisted affirmations. Designed to encourage clarity and emotional awareness.",
+        body: "A personal wellness app built around the Greek concept of self-flourishing. Eudaimonia brings together five tools in one place: AI-guided advice, a guided journal, a Pomodoro focus timer, a task tracker, and a creativity board. The goal was to build something that felt more like a space than a utility.",
+        images: ["/images/eudaimoniaMenu.gif"],
+        className: "modal-image--overview",
+      },
+      {
+        heading: "AI Advice",
+        body: "Users can write freely about what they are feeling, and the app sends that to the OpenAI API with a custom prompt that frames the response as a therapist guiding the user toward eudaimonia. The tone is warm and personal rather than generic.",
+        images: ["/images/portfolio-eudaimonia-advice.png"],
+        className: "modal-image--role",
+      },
+      {
+        heading: "Journal",
+        body: "The journal generates mindfulness prompts from a curated set stored on the backend. Entries are saved with a timestamp and can be reviewed later. The prompts are designed to encourage reflection rather than just logging.",
+        images: ["/images/portfolio-eudaimonia-journal.png"],
+        className: "modal-image--process",
+      },
+      {
+        heading: "Tech Stack",
+        body: "Frontend: React, React Router<br>Backend: Node.js, Express<br>AI: OpenAI API (GPT-3)<br>Data: JSON file persistence<br>Deployment: Heroku",
+        className: "modal-image--architecture",
+      },
+      {
+        heading: "Reflection",
+        body: "This was a solo project I built because I wanted to make something that felt genuinely useful to me. It pushed me to wire together a full frontend and backend, integrate an external AI API, and think carefully about how the design and tone of an app can shape how a person actually feels using it.",
       },
     ],
   },
 
   "blender-showcase": {
-    title: "Blender Modelling & Rigging Showcase",
+    title: "Hummingbird Animation",
     sections: [
       {
         heading: "Overview",
-        body: "A collection of 3D modeling, rigging, and animation studies. Demonstrates iterative refinement of topology, deformation, and weight-painting workflows.",
+        body: "A Blender modeling and animation project inspired by the aerodynamics of real hummingbirds. I modeled, rigged, and animated the bird from scratch, studying slow-motion flight footage to replicate the natural figure-eight wing pattern that enables hovering.",
+        images: ["/images/portfolio-blender-1.png"],
+        className: "modal-image--overview",
+      },
+      {
+        heading: "Modeling & Rigging",
+        body: "The topology was built to deform naturally during animation, with particular attention to the wing structure. I used anatomical reference images as overlays directly in Blender to match the geometry to real proportions.",
+        images: ["/images/portfolio-blender-2.png", "/images/portfolio-blender-3.png"],
+        className: "modal-image--role",
+      },
+      {
+        heading: "Animation",
+        body: "Each movement was crafted to feel believable — from the subtle body tilt to the wing elasticity. The heat map shows the weight painting used to control how the rig deforms the mesh during the wingbeat cycle.",
+        images: ["/images/portfolio-blender-4.png"],
+        className: "modal-image--process",
+      },
+      {
+        heading: "Reflection",
+        body: "This project taught me that biomimicry works in animation the same way it works in engineering: the closer you study how something actually moves, the more convincing your result. That principle carries into every creative-tech project I build.",
+      },
+      {
+        heading: "Tech Stack",
+        body: "Modeling, Rigging, Animation: Blender<br>Reference: High-speed flight footage, anatomical reference images",
+        className: "modal-image--architecture",
       },
     ],
   },
