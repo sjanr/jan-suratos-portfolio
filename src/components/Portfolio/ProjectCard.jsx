@@ -42,10 +42,10 @@ function ProjectCard({ id, title, description, image, tags }) {
       {isOpen && (
         <Modal onClose={() => setIsOpen(false)}>
           <div className="project-modal-header">
-            <button className="modal-close" onClick={() => setIsOpen(false)}>
+            <button className="modal-close" onClick={() => setIsOpen(false)} aria-label="Close">
               ×
             </button>
-            <h2 className="modal-title">{detail?.title || title}</h2>
+            <h2 className="modal-title" id="modal-title">{detail?.title || title}</h2>
           </div>
 
           {detail?.sections ? (

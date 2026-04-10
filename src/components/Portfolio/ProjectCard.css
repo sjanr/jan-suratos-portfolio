@@ -88,10 +88,11 @@
 
 /* --- Modal Container --- */
 .project-modal {
-  background: #ffffff;
+  background: #1e2530;
+  border: 1px solid rgba(200, 169, 110, 0.15);
   border-radius: 20px;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
-  width: clamp(700px, 80vw, 1000px);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+  width: min(80vw, 1000px);
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
@@ -120,16 +121,16 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #ffffff;
+  background: #1e2530;
   padding: 1rem 0 0.8rem 0;
   margin-bottom: 1.25rem;
-  border-bottom: 1px solid #e4eee7;
+  border-bottom: 1px solid rgba(200, 169, 110, 0.15);
 }
 
 .project-modal-header .modal-title {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #2d3a32;
+  color: #f0ebe0;
   letter-spacing: 0.3px;
   text-align: left;
   margin: 0;
@@ -143,18 +144,18 @@
   font-weight: 600;
   background: none;
   border: none;
-  color: #5b6b60;
+  color: rgba(240, 235, 224, 0.45);
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
 .project-modal-header .modal-close:hover {
-  color: #1a1a1a;
+  color: #f0ebe0;
 }
 
 /* --- Modal Content --- */
 .modal-content {
-  color: #3c4a40;
+  color: rgba(240, 235, 224, 0.75);
   font-size: 1rem;
   line-height: 1.75;
   max-width: min(90vw, 900px);
@@ -168,12 +169,12 @@
 }
 
 .modal-content strong {
-  color: #1e3128;
+  color: #f0ebe0;
   font-weight: 600;
 }
 
 .modal-content em {
-  color: #4e6356;
+  color: rgba(240, 235, 224, 0.55);
   font-style: italic;
 }
 
@@ -184,7 +185,7 @@
 }
 
 .modal-section + .modal-section {
-  border-top: 1px solid #e0ebe3;
+  border-top: 1px solid rgba(200, 169, 110, 0.12);
   padding-top: 1.5rem;
 }
 
@@ -198,8 +199,31 @@
 
 .modal-section p {
   margin-bottom: 0.75rem;
-  color: #3c4a40;
+  color: rgba(240, 235, 224, 0.75);
   line-height: 1.7;
+}
+
+/* --- Modal Mobile --- */
+@media (max-width: 600px) {
+  .project-modal {
+    width: 95vw;
+    max-height: 95vh;
+    border-radius: 12px;
+    padding: 16px;
+    padding-top: 0;
+  }
+
+  .project-modal-header .modal-title {
+    font-size: 1.2rem;
+  }
+
+  .modal-content {
+    font-size: 0.92rem;
+  }
+
+  .modal-section h3 {
+    font-size: 1.05rem;
+  }
 }
 
 /* --- Animations --- */

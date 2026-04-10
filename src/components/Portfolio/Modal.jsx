@@ -25,6 +25,7 @@ function Modal({ children, onClose }) {
         className="project-modal"
         role="dialog"
         aria-modal="true"
+        aria-labelledby="modal-title"
         onClick={(e) => e.stopPropagation()}
       >
         {children}
