@@ -13,16 +13,22 @@ function ProjectCard({ id, title, description, image, tags }) {
       {/* CARD */}
       <div className="project-card" onClick={() => setIsOpen(true)}>
         <div className="project-image-wrapper">
-          <img
-            src={image}
-            alt={title}
-            className="project-image"
-            style={
-              title === "WebGL: Spherical Hit-Testing"
-                ? { objectPosition: "center 65%", transform: "scale(1.02)" }
-                : {}
-            }
-          />
+          {image.endsWith(".mp4") ? (
+            <video
+              src={image}
+              className="project-image"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+          ) : (
+            <img
+              src={image}
+              alt={title}
+              className="project-image"
+            />
+          )}
         </div>
 
         <div className="project-content">

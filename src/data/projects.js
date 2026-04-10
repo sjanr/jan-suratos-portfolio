@@ -9,21 +9,21 @@ export const projectGroups = [
         title: "Wings of Legacy",
         description:
           "Third-person hummingbird flight game with a custom controller, Cinemachine camera, and tuned lift and drag to capture real bird agility.",
-        image: "/images/wingsOfLegacy_v2.gif",
+        image: "/images/wingsOfLegacy_v2.mp4",
         tags: ["Unity", "Narrative", "Game Design"],
       },
       {
         id: "ice-climber-twist",
         title: "Ice Climber: Twist",
         description: "Classic Ice Climber rebuilt with slope physics, wind zones, and unstable platforms to create a more dynamic climb.",
-        image: "/images/iceClimberTwist_v2.gif",
+        image: "/images/iceClimberTwist_v2.mp4",
         tags: ["Unity", "Game Physics", "Animation"],
       },
       // {
       //   id: "webgl-hit-testing",
       //   title: "WebGL: Spherical Hit-Testing",
       //   description: "WebGL experiment with interactive targets on a 3D sphere.",
-      //   image: "/images/WEBGL.gif",
+      //   image: "/images/WEBGL.mp4",
       //   tags: ["WebGL", "3D Interaction", "JavaScript"],
       //   link: "#",
       // },
@@ -39,7 +39,7 @@ export const projectGroups = [
         title: "TA Allocation & Management System",
         description:
           "Full-stack platform replacing spreadsheets with a React + Django system for TA applications, instructor requests, and LLM-powered matching.",
-        image: "/images/TALLOC.gif",
+        image: "/images/TALLOC.mp4",
         tags: ["Full Stack", "React", "Django", "LLM"],
       },
       {
@@ -47,7 +47,7 @@ export const projectGroups = [
         title: "Game of Amazons AI",
         description:
           "3rd place out of 22 teams. AI agent with a bio-inspired Voronoi heuristic that treats the board as a living territory map.",
-        image: "/images/gameOfAmazons_v2.gif",
+        image: "/images/gameOfAmazons_v2.mp4",
         tags: ["AI", "Heuristics", "Game Logic"],
       },
       {
@@ -55,7 +55,7 @@ export const projectGroups = [
         title: "DNA → Amino Acid Translator",
         description:
           "Translates raw DNA sequences into color-coded amino acid blocks, making the codon translation process visual and interactive.",
-        image: "/images/AMINO.gif",
+        image: "/images/AMINO.mp4",
         tags: ["Data Visualization", "Biology", "Creative Coding"],
       },
       // {
@@ -63,7 +63,7 @@ export const projectGroups = [
       //   title: "Weather Forecast Web App",
       //   description:
       //     "Responsive weather dashboard with live API data integration.",
-      //   image: "/images/WEATHER_v4.gif",
+      //   image: "/images/WEATHER_v4.mp4",
       //   tags: ["Frontend", "API", "Team Project", "UX"],
       //   link: "#",
       // },
@@ -80,7 +80,7 @@ export const projectGroups = [
         title: "Eudaimonia",
         description:
           "Solo-built wellness app with AI-guided advice, a prompted journal, Pomodoro timer, and creativity board — all wired to a Node/Express backend.",
-        image: "/images/eudaimoniaMenu.gif",
+        image: "/images/eudaimoniaMenu.mp4",
         tags: ["React", "Node", "UX", "AI"],
       },
       {
